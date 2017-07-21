@@ -8,7 +8,9 @@
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player ng-app="video-player">
+      <video-player
+        video = "$ctrl.video"
+      ng-app="video-player">
         <video-player><h5><em>videoPlayer</em> component goes here</h5></video-player>
     </video-player>
     </div>
