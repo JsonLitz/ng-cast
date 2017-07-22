@@ -1,7 +1,12 @@
 angular.module('video-player')
-.component('videoList', {
-  controller: function(){
-    this.videos = window.exampleVideoData
-  },
-  templateUrl: 'src/templates/videoList.html'
-});
+  .component('videoList', {
+    bindings: {
+      videosArr: '<'
+    },
+    // controller:function() {
+    //   checkShit = () => {
+    //     console.log(this)
+    //   }
+    // },
+    templateUrl: 'src/templates/videoList.html'
+  });
