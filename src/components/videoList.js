@@ -3,10 +3,5 @@ angular.module('video-player')
     bindings: {
       videosArr: '<'
     },
-    // controller:function() {
-    //   checkShit = () => {
-    //     console.log(this)
-    //   }
-    // },
     templateUrl: 'src/templates/videoList.html'
   });
