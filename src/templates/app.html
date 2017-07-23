@@ -1,17 +1,22 @@
 <div id="app container">
   <nav class="navbar">
     <div class="col-md-6 col-md-offset-3">
-      <search search = "$ctrl.search"
+      <search
+      search = "$ctrl.search"
+      search-results = "$ctrl.searchResults"
       ng-app="video-player"><h5><em>search</em> component goes here</h5></search>
     </div>
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player video = "$ctrl.video"
+      <video-player
+      video = "$ctrl.video"
       ng-app="video-player"><h5><em>videoPlayer</em> component goes here</h5></video-player>
     </div>
     <div class="col-md-5">
-      <video-list videos-arr = "$ctrl.videosArr"
+      <video-list
+      videos-arr = "$ctrl.videosArr"
+      select-video = "$ctrl.selectVideo"
       ng-app="video-player"><h5><em>videoList</em> component goes here</h5></video-list>
     </div>
   <div>
